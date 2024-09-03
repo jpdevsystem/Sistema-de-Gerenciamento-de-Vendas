@@ -1,0 +1,49 @@
+# Sistema de Vendas
+
+Este projeto é um sistema simples de gerenciamento de vendas, composto por três tabelas principais: `Clientes`, `Produtos`, e `Vendas`. Ele permite o cadastro de clientes, produtos e o registro de vendas realizadas, além de consultas e manipulação dos dados.
+
+## Estrutura do Banco de Dados
+
+### Tabela `Clientes`
+Contém as informações dos clientes cadastrados no sistema.
+- `id_cliente`: Chave primária, identificador único do cliente.
+- `nome`: Nome do cliente.
+- `email`: Email do cliente.
+- `telefone`: Telefone do cliente.
+
+### Tabela `Produtos`
+Contém as informações dos produtos disponíveis para venda.
+- `id_produto`: Chave primária, identificador único do produto.
+- `nome_produto`: Nome do produto.
+- `preco`: Preço do produto.
+- `quantidade_estoque`: Quantidade do produto disponível em estoque.
+
+### Tabela `Vendas`
+Registra as vendas realizadas, associando um cliente a um produto.
+- `id_venda`: Chave primária, identificador único da venda.
+- `id_cliente`: Chave estrangeira, faz referência à tabela `Clientes`.
+- `id_produto`: Chave estrangeira, faz referência à tabela `Produtos`.
+- `quantidade_vendida`: Quantidade de produtos vendidos na transação.
+- `data_venda`: Data da venda.
+
+## Funcionalidades
+
+- **Cadastro de Clientes:** Inserção de novos clientes na tabela `Clientes`.
+- **Cadastro de Produtos:** Inserção de novos produtos na tabela `Produtos`.
+- **Registro de Vendas:** Inserção de novas vendas na tabela `Vendas`, associando clientes e produtos.
+- **Consultas:**
+  - Visualizar todas as vendas realizadas, com informações do cliente e do produto.
+  - Consultar todas as compras realizadas por um cliente específico.
+  - Exibir o total de vendas realizadas por produto.
+- **Atualização:**
+  - Atualizar o estoque de um produto após uma venda.
+  - Atualizar as informações de um cliente.
+- **Deleção:**
+  - Deletar uma venda específica.
+  - Deletar um cliente, caso não existam vendas associadas.
+
+## Instruções de Uso
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/sistema_vendas.git
