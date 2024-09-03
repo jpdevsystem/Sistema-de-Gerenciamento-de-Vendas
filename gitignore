@@ -1,0 +1,41 @@
+
+### .gitignore
+
+```plaintext
+# Logs
+*.log
+
+# Bancos de Dados
+*.sql
+
+# Arquivos de Configuração
+.env
+config/
+
+# Arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretório do MySQL
+mysql/
+
+# Diretórios e arquivos de IDEs e editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Diretórios e arquivos de ambiente virtual do Python
+venv/
+__pycache__/
+*.py[cod]
+*.so
+
+# Arquivos de backup
+*.bak
+*.tmp
+
+# Outros arquivos que não devem ser versionados
+node_modules/
+dist/
+build/
